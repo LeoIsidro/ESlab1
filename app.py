@@ -25,5 +25,8 @@ def multiplicar():
     result = param1 * param2
     return f'El producto es: {result}'
 
-    
+   
+
+if __name__ == 'main':
+    app.run()
 
