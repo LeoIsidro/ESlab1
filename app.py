@@ -2,18 +2,14 @@ from flask import Flask
 
 from flask import request
 
- 
 
 app = Flask(__name__)
 
- 
 
 @app.route('/')
 
 def hello():
-
     return '<h1>Hello, World, we are fine!</h1>'
-
 
 @app.route('/sumar')
 def sumar():
@@ -29,6 +25,8 @@ def multiplicar():
     result = param1 * param2
     return f'El producto es: {result}'
 
+   
 
 if __name__ == 'main':
     app.run()
+
